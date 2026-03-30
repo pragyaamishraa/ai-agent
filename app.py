@@ -7,7 +7,6 @@ app = Flask(__name__)
 def home():
     return "AI Agent is running"
 
-#@app.route('/ask', methods=['POST'])
 @app.route('/ask')
 def ask():
     question = request.args.get("question")
